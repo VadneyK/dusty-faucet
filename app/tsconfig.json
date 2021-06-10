@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "target": "es2020",
+        "lib": [
+            "es6"
+        ],
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "build",
+        "strict": true,
+        "rootDir": "src",
+        "resolveJsonModule": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        // we set this to false because of TypeORM entity decorators
+        "strictPropertyInitialization": false,
+        "removeComments": true
+    },
+    "ts-node": {
+        "transpile-only": true,
+    },
+    "lib": [
+        "es2015"
+    ],
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "build",
+        "dist",
+        "scripts",
+        "tests"
+    ]
+}
